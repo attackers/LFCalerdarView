@@ -16,9 +16,13 @@
 @end
 
 @implementation ViewController
-
+/*
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+/************************** ok ******************************************
+    
     titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(00, 400, CGRectGetWidth(self.view.frame), 20)];
     titleLabel.textColor = [UIColor blackColor];
     [self.view addSubview:titleLabel];
@@ -45,5 +49,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+*/
 @end
