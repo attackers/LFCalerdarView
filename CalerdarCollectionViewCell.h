@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CalerdarCollectionViewCell : UICollectionViewCell
-
+@property (weak, nonatomic) IBOutlet UILabel *value;
+@property (weak, nonatomic) IBOutlet UILabel *actionInfo;
+- (void)setContentInfo:(NSDictionary*)sender;
 @end

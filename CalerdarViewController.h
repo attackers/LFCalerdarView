@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalerdarViewController : UIViewController
+@class CalerdarViewController;
+@protocol CalerdarViewDelegate <NSObject>
+- (void)changeDate:(NSString*)stg;
+- (void)calerdarviewHight:(CGFloat)hight;
+@end
 
+@interface CalerdarViewController : UIViewController
+@property (nonatomic,assign)id<CalerdarViewDelegate>delegate;
++ (CGFloat)returnCalerdarviewHight;
+- (void)changeCollectionviewLayout:(BOOL)horizontal;
 @end
